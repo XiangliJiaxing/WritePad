@@ -1,0 +1,13 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.panavtec.drawableview"
+    >
+
+  <application>
+
+    <activity android:name="me.panavtec.drawableview.PadActivity"
+        android:resizeableActivity="false"
+        android:screenOrientation="landscape"
+        android:launchMode="singleTask"/>
+  </application>
+</manifest>

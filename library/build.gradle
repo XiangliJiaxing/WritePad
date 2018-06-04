@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+  defaultPublishConfig "release"
+  publishNonDefault true
+  compileSdkVersion 27
+//  buildToolsVersion 27
+
+  defaultConfig {
+    minSdkVersion 17
+    targetSdkVersion 27
+    versionCode 1
+    versionName '1.0'
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+    }
+  }
+}
+
+dependencies {
+//  compile parent.ext.libSupportv4
+  api 'com.android.support:appcompat-v7:27.1.1'
+}
+
+// Used to push in maven
+//apply from: '../maven_push.gradle'
